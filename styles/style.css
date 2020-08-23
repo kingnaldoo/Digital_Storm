@@ -19,12 +19,15 @@ header {
     color: white;
     font-family: Segoe UI;
     font-weight: lighter;
-    
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
 }
 
 header nav{
     width: 73%;
-    max-width: 1000px;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -52,12 +55,24 @@ header nav ul #mobile-menu li{
     margin-left: 30px;
 }
 
+header nav ul #mobile-menu #about:hover{
+    color: var(--focus-color);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
 header nav ul #mobile-menu #link-contact a{
     padding: 6px;
     background-color: white;
     border-radius: 0 30px 0 30px;
     color: var(--primary-color);
     display: none;
+    text-decoration: none;
+}
+header nav ul #mobile-menu #link-contact a:hover{
+    background-color: var(--focus-color);
+    color: white;
+    transition: 0.2s;
 }
 
 header nav ul #call{
@@ -76,26 +91,32 @@ header nav ul #call #number{
 
 section{
     width: 100%;
+    position: relative;
+    top: 73px;
+    
 }
 
 section .section1{
-    background-image: url(/assets/fundo\ 1.svg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 100%;
+    position: relative;
+
+}
+
+section .section1 #fundo1, .section3 #fundo2{
     color: white;
     margin: 0 auto;
     width: 100%;
+    position: absolute;
 }
 
 section .section1 .start{
     display: flex;
     justify-content: center;
     width: 73%;
-    max-width: 1000px;
+    max-width: 73%;
     position: relative;
     margin: 0 auto;
     padding: 40px 0;
+    color: white;
 }
 
 section .section1 .start .text{
@@ -120,8 +141,8 @@ section .section1 .start .text .description {
     font-family: Segoe UI;
     font-weight: lighter;
     font-size: 15pt;
-    text-align: justify;
-    width: 500px;
+    /* text-align: justify; */
+    width: 90%;
 }
 
 section .section1 .start .text .newsletter h5{
@@ -184,7 +205,7 @@ section .section2{
 
 section .section2 .clients {
     width: 73%;
-    max-width: 1000px;
+    max-width: 73%;
     margin: 0 auto;
     background-color: transparent;
 }
@@ -197,7 +218,7 @@ section .section2 .clients .logos{
 }
 
 section .section2 .clients .logos img{
-    width: 220px;
+    width: 20%;
 }
 
 section .section2 .clients h1, .reasons h1, .depositions h1{
@@ -208,15 +229,12 @@ section .section2 .clients h1, .reasons h1, .depositions h1{
 }
 
 section .section3{
-    background-image: url(/assets/fundo2.svg);
-    background-repeat: no-repeat;
-    background-position-x: center;
     width: 100%
 }
 
 section .section3 .reasons{
     width: 73%;
-    max-width: 1000px;
+    max-width: 73%;
     margin: 0 auto;
     position: relative;
     height: 1000px;
@@ -245,7 +263,7 @@ section .section3 .reasons #box .type2{
 }
 
 section .section3 .reasons #box .type1, .type2{
-    width: 160px;
+    width: 17%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -276,7 +294,7 @@ section .section4{
 section .section4 .deposition{
     display: flex;
     width: 73%;
-    max-width: 1000px;
+    max-width: 73%;
     margin: 0 auto;
 }
 
@@ -289,7 +307,7 @@ section .section4 .deposition .quote, #severino{
 }
 
 section .section4 .deposition .quote h3{
-    width: 340px;
+    width: 50%;
     text-align: right;
     margin-left: auto;
     font-family: Montserrat;
@@ -297,22 +315,27 @@ section .section4 .deposition .quote h3{
     font-size: 13pt;
 }
 
-section .section5 .contact{
+section .section5 #contact{
     display: flex;
     width: 73%;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 73%;
     margin: 0 auto;
     border: solid 1px var(--primary-color);
 }
 
-section .section5 .contact #contact-text{
+section .section5 #contact #contact-text{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-section .section5 .contact #contact-text h1{
+section .section5 #contact #contact-text #ilustration-contact{
+    width: 75%; 
+    margin: 0 auto;      
+}
+
+section .section5 #contact #contact-text h1{
     position: relative;
     padding: 40px;
     font-family: Montserrat;
@@ -320,24 +343,28 @@ section .section5 .contact #contact-text h1{
     font-size: 30pt;
 }
 
-section .section5 .contact form{
+section .section5 #contact form{
     background-color: var(--primary-color);
-    padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    width: 50%;
 }
 
-section .section5 .contact form input{
-    width: 300px;
+section .section5 #contact form fieldset{
+    padding: 5%;
+}
+
+section .section5 #contact form input{
+    
+    width: 25vw;
     height: 40px;
     border-radius: 0;
     background-color: transparent;
     border-bottom: solid 1px white;
 }
 
-section .section5 .contact form input[type=text], form input[type=email], form input[type=number]{
+section .section5 #contact form input[type=text], form input[type=email], form input[type=number]{
     font-family: Segoe UI;
     font-weight: 100;
     font-size: 15pt;
@@ -345,11 +372,11 @@ section .section5 .contact form input[type=text], form input[type=email], form i
     color: white;
 }
 
-section .section5 .contact form input:focus{
+section .section5 #contact form input:focus{
     outline: none;
 }
 
-section .section5 .contact form button{
+section .section5 #contact form button{
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
@@ -357,18 +384,19 @@ section .section5 .contact form button{
     height: 40px;
     border-radius: 0;
     padding: 5px 10px;
+    margin: 20px auto;
 }
 
-section .section5 .contact form button:hover{
+section .section5 #contact form button:hover{
     background-color: var(--focus-color);
     box-shadow: 0px 0px 10px var(--focus-color);
 }
 
-section .section5 .contact form button:focus{
+section .section5 #contact form button:focus{
     outline: 0;
 }
 
-section .section5 .contact form button h4, form button img{
+section .section5 #contact form button h4, form button img{
     font-family: Segoe UI;
     font-weight: 100;
     font-size: 15pt;
@@ -376,7 +404,7 @@ section .section5 .contact form button h4, form button img{
     color: white;
 }
 
-section .section5 .contact form p{
+section .section5 #contact form p{
     font-family: Segoe UI;
     font-weight: 400;
     font-size: 15pt;
@@ -385,8 +413,9 @@ section .section5 .contact form p{
 
 footer{
     background-color: var(--primary-color);
-    margin-top: 50px;
+    position: relative;
     width: 100%;
+    top: 100px;
 }
 
 footer .footer{

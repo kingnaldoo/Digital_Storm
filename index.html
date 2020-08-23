@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,900;1,900&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
     <link rel="icon" type="image/svg" href="/assets/ds-logo.svg">
     <title>Digital Storm</title>
 </head>
@@ -17,8 +18,8 @@
                 <img src="/assets/ds-logo.svg" alt="logo">
                 <ul>
                     <div id="mobile-menu">
-                        <li><a>SOBRE NÓS</a></li>
-                        <li id="link-contact"><a>SOLICITAR PROPOSTA</a></li>
+                        <li id="about"><a>SOBRE NÓS</a></li>
+                        <li id="link-contact"><a href="#contact">SOLICITAR PROPOSTA</a></li>
                     </div>
                     <div id="call">
                         <li id="number">3348-4444</li>
@@ -30,6 +31,7 @@
 
         <section>
             <div class="section1">
+                <img src="/assets/fundo 1.svg" id="fundo1">
                 <div class="start">
                     <div class="text">
                         <div class="quote">
@@ -72,6 +74,7 @@
             </div>
 
             <div class="section3">
+                <img src="/assets/fundo2.svg" id="fundo2">
                 <div class="reasons">
                     <h1>O QUE NOS TORNA A MELHOR OPÇÃO?</h1>
                     <div id="box">
@@ -117,10 +120,10 @@
             </div>
 
             <div class="section5">
-                <div class="contact">
+                <div id="contact">
                     <div id="contact-text">
                         <h1>Ainda tem dúvida(s), contate-nos sem nenhum compromisso.</h1>
-                        <img src="/assets/ilustracao-atendimento.svg" alt="contato entre duas pessoas">
+                        <img src="/assets/ilustracao-atendimento.svg" alt="contato entre duas pessoas" id="ilustration-contact">
                     </div>
     
                     <form action="" method="">
@@ -177,5 +180,6 @@
             </div>
         </footer>
     </div>
+<script type="text/javascript" src="/scripts/home.js"></script>
 </body>
 </html>

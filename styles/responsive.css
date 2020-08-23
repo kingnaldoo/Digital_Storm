@@ -1,0 +1,132 @@
+@media(max-width: 1224px){
+
+    .content{
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul{
+        margin: 0 auto;
+    }
+
+    section .section1 .start{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section .section1 .start .text div{
+        margin-top: 5%;
+    }
+
+    section .section1 #fundo1{
+        width: 2300px;
+    }
+
+    section .section2 .clients{
+        width: 73%;
+    }
+
+    section .section2 .clients .logos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    section .section2 .clients .logos img{
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    section .section3 .reasons{
+        width: 73%;
+        height: 2200px;
+    }
+
+    section .section3 #fundo2{
+        width: 3900px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    section .section3 .reasons #box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 60px auto;
+    }
+
+    section .section3 .reasons #box .type1, .type2{
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    section .section3 .reasons #box .type1 h3, .type2 h3{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 25pt;
+    }
+
+    section .section3 .reasons #box .type1 p, .type2 p{
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20pt;
+    }
+
+    section .section3 .reasons #box .type2{
+        top: 0;
+    }
+
+    section .section5 #contact form button{
+        margin-top: 20px;
+    }
+
+    section .section4{
+    position: relative;
+    top: 0;
+    }
+
+    section .section4 .deposition{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .section4 .deposition #severino{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    section .section4 .deposition .quote h3{
+        width: 75%;
+    }
+
+    section .section5 #contact{
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        justify-content: center;
+    }
+
+    section .section5 #contact form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    section .section5 #contact form input{
+        width: 90%;
+    }
+
+    section .section5 #contact form fieldset{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    
+}
