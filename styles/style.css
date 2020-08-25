@@ -7,430 +7,104 @@
     --focus-color: #00F220;
 }
 
-.content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+
+img{
+    width: 20px;
 }
 
-header {
+header{
+    width: 100vw;
     background-color: var(--primary-color);
-    color: white;
-    font-family: Segoe UI;
-    font-weight: lighter;
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
     z-index: 20;
 }
 
-header nav{
-    width: 73%;
+header nav#menu-top{
     display: flex;
-    position: relative;
+    padding: 6vw;
     justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px 0;
 }
 
-header nav ul{
-    list-style: none;
-    display: flex;
+header nav#menu-top .logo img#logo{
+    width: 35vw;
+}
+
+header nav#menu-top #button-navbar{
+    background-color: transparent;
+}
+
+header nav#menu-top #button-navbar:focus{
+    outline: none;
+}
+
+header nav#menu-top #button-navbar img#button{
+    width: 10vw;
+}
+
+.white-space{
+    position: relative;
+    height: 24vw;
+    background-color: var(--primary-color);
+}
+
+.content{
     position: relative;
 }
 
-header nav ul #mobile-menu{
-    display: flex;
-    position: relative;
-    /* left: 37%; */
-}
-
-header nav ul #mobile-menu li{
-    position: relative;
-    vertical-align: middle;
-    margin: auto 0;
-    margin-left: 30px;
-}
-
-header nav ul #mobile-menu #about:hover{
-    color: var(--focus-color);
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-header nav ul #mobile-menu #link-contact a{
-    padding: 6px;
-    background-color: white;
-    border-radius: 0 30px 0 30px;
-    color: var(--primary-color);
+aside{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
     display: none;
+}
+
+aside ul{
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    height: 40vh;
+    margin: 20vh auto;
+
+    text-align: center;
+    font-family: Segoe UI;
+    color: white;
+}
+
+aside ul #mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 6vw;
+}
+
+aside ul #mobile-menu li{
+    padding: 3vw;
+}
+
+aside ul #mobile-menu li a{
     text-decoration: none;
 }
-header nav ul #mobile-menu #link-contact a:hover{
-    background-color: var(--focus-color);
-    color: white;
-    transition: 0.2s;
-}
 
-header nav ul #call{
-    margin-left: 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-header nav ul #call #number{
-    font-size: 18pt;
-    font-weight: bold;
-}
-
-section{
-    width: 100%;
-    position: relative;
-    top: 73px;
-    
-}
-
-section .section1{
-    position: relative;
-
-}
-
-section .section1 #fundo1, .section3 #fundo2{
-    color: white;
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-}
-
-section .section1 .start{
-    display: flex;
-    justify-content: center;
-    width: 73%;
-    max-width: 73%;
-    position: relative;
-    margin: 0 auto;
-    padding: 40px 0;
-    color: white;
-}
-
-section .section1 .start .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-section .section1 .start .text .quote h1{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bolder;
-    font-size: 30pt;
-}
-
-section .section1 .start .text .quote h3{
-    font-family: Segoe UI;
-    font-weight: lighter;
-    text-align: end;
-}
-
-section .section1 .start .text .description {
-    font-family: Segoe UI;
-    font-weight: lighter;
-    font-size: 15pt;
-    /* text-align: justify; */
-    width: 90%;
-}
-
-section .section1 .start .text .newsletter h5{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 12pt;
-}
-
-section .section1 .start .text .newsletter .box{
-    display: flex;
-    margin-top: 10px;
-}
-
-section .section1 .start .text .newsletter .box input{
-    width: 300px;
-    height: 40px;
-    padding: 0 20px;
-    border-radius: 0;
-}
-
-section .section1 .start .text .newsletter .box input[type=text]{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 15pt;
-    position: relative;
-    vertical-align: middle;
-}
-
-section .section1 .start .text .newsletter .box input:focus{
-    border: 0;
-    outline: none;
-}
-
-section .section1 .start .text .newsletter .box input::placeholder{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 15pt;
-}
-
-section .section1 .start .text .newsletter .box button{
-    width: 40px;
-    background-color: var(--secondary-color);
-    border-radius: 0;
-}
-
-section .section1 .start .text .newsletter .box button:focus{
-    outline: none;
-}
-
-section .section1 .start .text .newsletter .box button:hover{
-    background-color: var(--focus-color);
-    box-shadow: 0 0 10px var(--focus-color);
-}
-
-section .section2{
-    position: relative;
-    background-color: transparent;
-    padding: 150px 0;
-}
-
-section .section2 .clients {
-    width: 73%;
-    max-width: 73%;
-    margin: 0 auto;
-    background-color: transparent;
-}
-
-section .section2 .clients .logos{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-
-section .section2 .clients .logos img{
-    width: 20%;
-}
-
-section .section2 .clients h1, .reasons h1, .depositions h1{
-    font-family: Segoe UI;
-    color: var(--primary-color);
-    font-size: 30pt;
-    text-align: center;
-}
-
-section .section3{
-    width: 100%
-}
-
-section .section3 .reasons{
-    width: 73%;
-    max-width: 73%;
-    margin: 0 auto;
-    position: relative;
-    height: 1000px;
-}
-
-section .section3 .reasons h1{
-    position: relative;
-    top: 50px;
-    color: white;
-}
-
-section .section3 .reasons #box{
-    display: flex;
-    justify-content: space-between;
-    margin: 100px 0;
-}
-
-section .section3 .reasons #box .type1{
-    border-radius: 0 60px 0 60px;
-}
-
-section .section3 .reasons #box .type2{
-    border-radius: 60px 0 60px 0;
-    position: relative;
-    top: 150px;
-}
-
-section .section3 .reasons #box .type1, .type2{
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+aside ul #mobile-menu li#link-contact a{
+    padding: 2vw;
+    border-radius: 0 5vw 0 5vw;
     background-color: white;
-    padding: 10px 34px;
     color: var(--primary-color);
 }
 
-section .section3 .reasons #box .type1 h3, .type2 h3{
-    text-align: center;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 19pt;
-    margin: 10px 0;
-}
-
-section .section3 .reasons #box .type1 p, .type2 p{
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 14pt;
-}
-
-section .section4{
-    position: relative;
-    top: -120px;
-}
-
-section .section4 .deposition{
-    display: flex;
-    width: 73%;
-    max-width: 73%;
-    margin: 0 auto;
-}
-
-section .section4 .deposition .quote, #severino{
-    display: inline;
-    font-size: 16pt;
-    font-family: Montserrat;
-    font-weight: 400;
-    margin: auto 0;
-}
-
-section .section4 .deposition .quote h3{
-    width: 50%;
-    text-align: right;
-    margin-left: auto;
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 13pt;
-}
-
-section .section5 #contact{
-    display: flex;
-    width: 73%;
-    justify-content: space-between;
-    max-width: 73%;
-    margin: 0 auto;
-    border: solid 1px var(--primary-color);
-}
-
-section .section5 #contact #contact-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-section .section5 #contact #contact-text #ilustration-contact{
-    width: 75%; 
-    margin: 0 auto;      
-}
-
-section .section5 #contact #contact-text h1{
-    position: relative;
-    padding: 40px;
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 30pt;
-}
-
-section .section5 #contact form{
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-}
-
-section .section5 #contact form fieldset{
-    padding: 5%;
-}
-
-section .section5 #contact form input{
-    
-    width: 25vw;
-    height: 40px;
-    border-radius: 0;
-    background-color: transparent;
-    border-bottom: solid 1px white;
-}
-
-section .section5 #contact form input[type=text], form input[type=email], form input[type=number]{
+aside ul #call #number{
     font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 15pt;
-    vertical-align: middle;
-    color: white;
+    font-weight: 700;
+    font-size: 10vw;
 }
 
-section .section5 #contact form input:focus{
-    outline: none;
-}
-
-section .section5 #contact form button{
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--secondary-color);
-    width: 300px;
-    height: 40px;
-    border-radius: 0;
-    padding: 5px 10px;
-    margin: 20px auto;
-}
-
-section .section5 #contact form button:hover{
-    background-color: var(--focus-color);
-    box-shadow: 0px 0px 10px var(--focus-color);
-}
-
-section .section5 #contact form button:focus{
-    outline: 0;
-}
-
-section .section5 #contact form button h4, form button img{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 15pt;
-    margin: auto 0;
-    color: white;
-}
-
-section .section5 #contact form p{
-    font-family: Segoe UI;
-    font-weight: 400;
-    font-size: 15pt;
-    color: white;
-}
-
-footer{
-    background-color: var(--primary-color);
-    position: relative;
-    width: 100%;
-    top: 100px;
-}
-
-footer .footer{
-    width: 45%;
-    max-width: 1000px;
-    display: flex;
-    margin: 15px auto;
-    justify-content: space-between;
-}
-
-footer .footer h3, .footer .socialMedias img{
-    margin: auto 0;
-    color: white;
-    font-family: Segoe UI;
-    font-weight: lighter;
-    font-size: 20pt;
-    padding-left: 20px;
+aside ul #call #local-call{
+    font-size: 6vw;
 }
