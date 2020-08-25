@@ -18,12 +18,10 @@ buttonMenu.addEventListener('click', function menuAction(){
     if(count%2!=0){ 
         menu.style.display='block'
         buttonMenu.setAttribute('src', 'assets/x.svg')
-        menu.style.transition='0.5s'
     }
     else{
         menu.style.display = 'none'
         buttonMenu.setAttribute('src', 'assets/menu-button.svg')
-        menu.style.transition='0.5s'
     }
 })
 
