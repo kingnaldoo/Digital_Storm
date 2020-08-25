@@ -26,6 +26,10 @@ header nav#menu-top .logo img#logo{
     width: 35vw;
 }
 
+header nav#menu-top ul{
+    display: none;
+}
+
 header nav#menu-top #button-navbar{
     background-color: transparent;
 }
@@ -42,10 +46,6 @@ header nav#menu-top #button-navbar img#button{
     position: relative;
     height: 24vw;
     background-color: var(--primary-color);
-}
-
-.content{
-    position: relative;
 }
 
 aside{
@@ -114,10 +114,12 @@ section #fundo1{
     width: 100vw;
 }
 
+section .section1{
+    background-color: var(--primary-color);
+}
+
 section .start{
     position: relative;
-    background-color: var(--primary-color);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -131,7 +133,7 @@ section .start #ilustration-start{
 }
 
 section .start #ilustration-start, .quote, .description, .newsletter{
-    padding: 4vh 0;
+    padding: 2.5vh 0;
 }
 
 section .start .quote h1{
@@ -268,7 +270,6 @@ section .section3 .reasons #box .type2{
 section .section3 .reasons #box img{
     margin: 0 auto;
     width: 20vw;
-
 }
 
 section .section3 .reasons #box h3{
@@ -390,7 +391,7 @@ section .section5 #contact form fieldset p{
 
 section .section5 #contact form fieldset input{
     width: 100%;
-    height: 40px;
+    height: 5vh;
     border-radius: 0;
     background-color: transparent;
     border-bottom: solid 1px white;
@@ -440,7 +441,6 @@ footer .footer h3{
     font-size: 5vw;
     color: white;
     text-align: center;
-    padding-bottom: 3vh;
 }
 
 footer .footer .socialMedias{

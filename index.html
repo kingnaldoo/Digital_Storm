@@ -18,6 +18,17 @@
                 <div class="logo">
                     <img src="assets/logo-negativo.svg" alt="logo" id="logo">
                 </div>
+
+                <ul>
+                    <div id="mobile-menu">
+                        <li id="about"><a>SOBRE NÓS</a></li>
+                        <li id="link-contact"><a href="#contact">SOLICITAR PROPOSTA</a></li>
+                    </div>
+                    <div id="call">
+                        <li id="number">3348-4444</li>
+                        <li id="local-call">LIGAÇÃO LOCAL</li>
+                    </div>
+                </ul>
                 <button id="button-navbar">
                     <img src="assets/menu-button.svg" alt="botão de menu" id="button">
                 </button>
@@ -25,7 +36,7 @@
         </header>
     <div class="white-space"></div>
     <div class="content">
-        <aside id="menu">
+        <aside id="menu-float">
             <ul>
                 <div id="mobile-menu">
                     <li id="about"><a>SOBRE NÓS</a></li>
@@ -41,8 +52,8 @@
         <section>
             <div class="section1">
                 <div class="start">
+                    <img src="assets/ilustracao-inicio.svg" alt="ilustração de pessoas conectadas à internet" id="ilustration-start">
                     <div class="text">
-                        <img src="assets/ilustracao-inicio.svg" alt="ilustração de pessoas conectadas à internet" id="ilustration-start">
                         <div class="quote">
                             <h1>"Se seu negócio não está na internet, ele não existe."</h1>
                             <h3>Bill Gates, fundador da Microsoft</h3>
@@ -55,7 +66,7 @@
                             <div class="box">
                                 <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
                                 
-                                <button type="submit">
+                                <button type="submit" id="button-action">
                                     <img src="assets/raio.svg" class="raio">
                                 </button>
                             </div>
@@ -64,12 +75,10 @@
     
                     </div>
     
-                    
-                    
                 </div>
-                <img src="assets/fundo 1.svg" id="fundo1">
+                
             </div>
-            
+            <img src="assets/fundo 1.svg" id="fundo1">
 
             <div class="section2">
                 <div class="clients">
@@ -83,8 +92,8 @@
                 </div>
             </div>
 
+            <img src="assets/fundo2-start.svg" id="fundo2-start">
             <div class="section3">
-                <img src="assets/fundo2-start.svg" id="fundo2-start">
                 <div class="reasons">
                     <h1>O QUE NOS TORNA A MELHOR OPÇÃO?</h1>
                     <div id="box">
@@ -110,24 +119,24 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/fundo2-end.svg" id="fundo2-end">
             </div>
+            <img src="assets/fundo2-end.svg" id="fundo2-end">
 
             <div class="section4">
                 <div class="depositions">
                     <h1>DEPOIMENTOS</h1>
                     <div class="deposition">
-                        <div class="quote">
-                            
+                        <div class="quote">             
                             <div id="frase">
                                 <img src="assets/aspas 1.svg" alt="abre aspas">
                                 <p>Antes nossos negócios eram somente na loja física, mas agora com nossos e-commerce, nosso faturamento aumentou em 200% graças a <b>Digital Storm</b></p>
                                 <img src="assets/aspas 2.svg" alt="fecha aspas">
                             </div>
-                            <img src="assets/severino.png" alt="Severino" id="severino">
-                            <h3>Severino Ramalho Neto, Presidente do grupo Mercadinhos São Luís</h3>
+                            <figure>
+                                <img src="assets/severino.png" alt="Severino" id="severino">
+                                <h3>Severino Ramalho Neto, Presidente do grupo Mercadinhos São Luís</h3>
+                            </figure>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -173,7 +182,7 @@
                             <input type="number" name="phone" id="phone" noScrool>
                         </fieldset>
     
-                        <button type="submit">
+                        <button type="submit" id="button-action">
                             <h4>AGUARDE NOSSO CONTATO</h4>
                             <img src="assets/raio.svg" class="raio">
                         </button>
