@@ -2,6 +2,7 @@
 <img src="https://github.com/Reinaldodasilva/Digital_Storm/blob/master/assets/logo.svg"><br><br>
 ➰ Digital Storm é um projeto desenvolvido na etapa de desafio técnico do Processo Seletivo 2020 da Container Digital Jr <br><br>
 <img src="https://github.com/Reinaldodasilva/Digital_Storm/blob/master/assets/views.jpg">
+  Acesse o site clicando [aqui](https://reinaldodasilva.github.io/Digital_Storm/)
 </p>
 
 ## 🚀OBJETIVOS
