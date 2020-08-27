@@ -134,7 +134,7 @@
     }
 
     section .start .text .newsletter .box input{
-        width: 25vw;
+        width: 22.5vw;
         height: 3vw;
     }
 
@@ -145,6 +145,7 @@
 
     section .start .newsletter .box button{
         width: 3vw;
+        height: 3vw;
     }
 
     .raio{
@@ -185,8 +186,8 @@
     }
 
     section .section3 .reasons #box .type1, #box .type2{
-        padding: 2vw;
-        margin: 2vh 2vw;
+        padding: 1.5vw;
+        margin: 2vh 1vw;
         width: 25vw;
     }
 
@@ -201,16 +202,16 @@
     }
 
     section .section3 .reasons #box img{
-        width: 7vw;
+        width: 5vw;
     }
 
     section .section3 .reasons #box h3{
-        font-size: 1vw;
+        font-size: 2vw;
         padding: 2vw;
     }
 
     section .section3 .reasons #box p{
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     section #fundo2-end{
@@ -273,7 +274,7 @@
     }
 
     section .section5 #contact form{
-        padding: 2vw;
+        padding: 5vw 2vw;
         width: 50%;
     }
 
@@ -285,22 +286,33 @@
         font-size: 1.6vw;
     }
 
+    section .section5 #contact form input[type=text], form input[type=email], form input[type=number]{
+        font-size: 2vw;
+    }
+
+    section .section5 #contact form fieldset, form button{
+        padding: 1vh 0;
+    }
+
     footer .footer{
         flex-direction: row;
         width: 80vw;
         padding: 2vw;
-        margin: auto auto;
+        
     }
 
     footer .footer h3{
-        font-size: 3vw;
+        font-size: 2vw;
+        margin: auto 0;
     }
 
     footer .footer .socialMedias{
-        width: 20vw;
+        width: 13vw;
+        margin: auto auto;
+        padding-left: 20vw;
     }
 
     footer .footer .socialMedias img{
-        width: 5vw;
+        width: 3vw;
     }
 }

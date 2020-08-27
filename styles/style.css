@@ -165,7 +165,7 @@ section .start .newsletter .box{
 
 section .start .newsletter .box input{
     width: 60vw;
-    height: 8vh;
+    height: 8vw;
     padding: 0 4vw;
     border-radius: 0;
 }
@@ -182,13 +182,14 @@ section .start .newsletter .box input:focus, button:focus{
 }
 
 section .start .newsletter .box button{
-    width: 8vh;
+    width: 8vw;
+    height: 8vw;
     background-color: var(--secondary-color);
     border-radius: 0;
 }
 
 .raio{
-    width: 7vw;
+    width: 6vw;
 }
 
 section .section2{
@@ -252,8 +253,9 @@ section .section3 .reasons #box{
 
 section .section3 .reasons #box .type1, #box .type2{
     background-color: white;
-    margin: 4vh 0;
+    margin: 4vh auto;
     padding: 7vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -269,7 +271,7 @@ section .section3 .reasons #box .type2{
 
 section .section3 .reasons #box img{
     margin: 0 auto;
-    width: 20vw;
+    width: 40%;
 }
 
 section .section3 .reasons #box h3{
@@ -284,6 +286,7 @@ section .section3 .reasons #box p{
     font-family: Montserrat;
     font-weight: 300;
     font-size: 7vw;
+    width: 100%;
 }
 
 section #fundo2-end{
@@ -344,7 +347,7 @@ section .section4 .depositions .quote h3{
 }
 
 section .section5 #contact{
-    width: 90vw;
+    width: 90%;
     margin: 0 auto;
     border: solid 1px var(--primary-color);
     display: flex;
