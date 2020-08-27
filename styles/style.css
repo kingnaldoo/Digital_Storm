@@ -7,358 +7,391 @@
     --focus-color: #00F220;
 }
 
-.content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-header {
+header{
+    width: 100vw;
     background-color: var(--primary-color);
-    color: white;
-    font-family: Segoe UI;
-    font-weight: lighter;
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
     z-index: 20;
 }
 
-header nav{
-    width: 73%;
+header nav#menu-top{
     display: flex;
-    position: relative;
+    padding: 6vw;
     justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px 0;
 }
 
-header nav ul{
-    list-style: none;
-    display: flex;
-    position: relative;
+header nav#menu-top .logo img#logo{
+    width: 35vw;
 }
 
-header nav ul #mobile-menu{
-    display: flex;
-    position: relative;
-    /* left: 37%; */
-}
-
-header nav ul #mobile-menu li{
-    position: relative;
-    vertical-align: middle;
-    margin: auto 0;
-    margin-left: 30px;
-}
-
-header nav ul #mobile-menu #about:hover{
-    color: var(--focus-color);
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-header nav ul #mobile-menu #link-contact a{
-    padding: 6px;
-    background-color: white;
-    border-radius: 0 30px 0 30px;
-    color: var(--primary-color);
+header nav#menu-top ul{
     display: none;
-    text-decoration: none;
-}
-header nav ul #mobile-menu #link-contact a:hover{
-    background-color: var(--focus-color);
-    color: white;
-    transition: 0.2s;
 }
 
-header nav ul #call{
-    margin-left: 30px;
-    text-align: center;
+header nav#menu-top #button-navbar{
+    background-color: transparent;
+}
+
+header nav#menu-top #button-navbar:focus{
+    outline: none;
+}
+
+header nav#menu-top #button-navbar img#button{
+    width: 10vw;
+}
+
+.white-space{
+    position: relative;
+    height: 24vw;
+    background-color: var(--primary-color);
+}
+
+aside{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+aside ul{
+    list-style: none;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: space-between;
+    width: 80vw;
+    height: 40vh;
+    margin: 20vh auto;
+
+    text-align: center;
+    font-family: Segoe UI;
+    color: white;
 }
 
-header nav ul #call #number{
-    font-size: 18pt;
-    font-weight: bold;
+aside ul #mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 6vw;
+}
+
+aside ul #mobile-menu li{
+    padding: 3vw;
+}
+
+aside ul #mobile-menu li a{
+    text-decoration: none;
+}
+
+aside ul #mobile-menu li#link-contact a{
+    padding: 2vw;
+    border-radius: 0 5vw 0 5vw;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+aside ul #call #number{
+    font-family: Segoe UI;
+    font-weight: 700;
+    font-size: 10vw;
+}
+
+aside ul #call #local-call{
+    font-size: 6vw;
 }
 
 section{
-    width: 100%;
+    margin-bottom: 4vh;
+}
+
+section #fundo1{
     position: relative;
-    top: 73px;
-    
+    top: -1vh;
+    width: 100vw;
 }
 
 section .section1{
+    background-color: var(--primary-color);
+}
+
+section .start{
     position: relative;
-
-}
-
-section .section1 #fundo1, .section3 #fundo2{
-    color: white;
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-}
-
-section .section1 .start{
-    display: flex;
-    justify-content: center;
-    width: 73%;
-    max-width: 73%;
-    position: relative;
-    margin: 0 auto;
-    padding: 40px 0;
-    color: white;
-}
-
-section .section1 .start .text{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 6vw;
+    
+    color: white;
 }
 
-section .section1 .start .text .quote h1{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bolder;
-    font-size: 30pt;
+section .start #ilustration-start{
+    width: 100%;
 }
 
-section .section1 .start .text .quote h3{
-    font-family: Segoe UI;
-    font-weight: lighter;
-    text-align: end;
+section .start #ilustration-start, .quote, .description, .newsletter{
+    padding: 2.5vh 0;
 }
 
-section .section1 .start .text .description {
-    font-family: Segoe UI;
-    font-weight: lighter;
-    font-size: 15pt;
-    /* text-align: justify; */
-    width: 90%;
+section .start .quote h1{
+    font-family: Nunito;
+    font-size: 10vw;
 }
 
-section .section1 .start .text .newsletter h5{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 12pt;
+section .start .quote h3, .description, .newsletter h5{
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 4vw;
+    text-align: right;
 }
 
-section .section1 .start .text .newsletter .box{
+section .start .description{
+    text-align: left;
+    font-size: 5vw;
+}
+
+section .start .newsletter h5{
+    text-align: left;
+    font-weight: 300;
+}
+
+section .start .newsletter .box{
     display: flex;
-    margin-top: 10px;
+    padding: 3vh 0;
 }
 
-section .section1 .start .text .newsletter .box input{
-    width: 300px;
-    height: 40px;
-    padding: 0 20px;
+section .start .newsletter .box input{
+    width: 60vw;
+    height: 8vh;
+    padding: 0 4vw;
     border-radius: 0;
 }
 
-section .section1 .start .text .newsletter .box input[type=text]{
+section .start .newsletter .box input[type=text]{
     font-family: Segoe UI;
     font-weight: 100;
-    font-size: 15pt;
-    position: relative;
-    vertical-align: middle;
+    font-size: 6vw;
 }
 
-section .section1 .start .text .newsletter .box input:focus{
+section .start .newsletter .box input:focus, button:focus{
     border: 0;
     outline: none;
 }
 
-section .section1 .start .text .newsletter .box input::placeholder{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 15pt;
-}
-
-section .section1 .start .text .newsletter .box button{
-    width: 40px;
+section .start .newsletter .box button{
+    width: 8vh;
     background-color: var(--secondary-color);
     border-radius: 0;
 }
 
-section .section1 .start .text .newsletter .box button:focus{
-    outline: none;
-}
-
-section .section1 .start .text .newsletter .box button:hover{
-    background-color: var(--focus-color);
-    box-shadow: 0 0 10px var(--focus-color);
+.raio{
+    width: 7vw;
 }
 
 section .section2{
-    position: relative;
-    background-color: transparent;
-    padding: 150px 0;
+    margin: 3vh 0;
 }
 
-section .section2 .clients {
-    width: 73%;
-    max-width: 73%;
+section .section2 .clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90vw;
     margin: 0 auto;
-    background-color: transparent;
+}
+
+section .section2 .clients h1, .logos{
+    margin: 1vh auto;
+}
+
+section .section2 .clients h1{
+    font-family: Segoe UI;
+    font-size: 9vw;
+    text-align: center;
+    color: var(--primary-color);
 }
 
 section .section2 .clients .logos{
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin-top: 80px;
+    flex-direction: column;
+    
 }
 
 section .section2 .clients .logos img{
-    width: 20%;
+    width: 100%;
+    margin: 2vh 0;
 }
 
-section .section2 .clients h1, .reasons h1, .depositions h1{
-    font-family: Segoe UI;
-    color: var(--primary-color);
-    font-size: 30pt;
-    text-align: center;
-}
-
-section .section3{
-    width: 100%
+section #fundo2-start{
+    width: 100vw;
+    top: 1vh;
+    position: relative;
 }
 
 section .section3 .reasons{
-    width: 73%;
-    max-width: 73%;
-    margin: 0 auto;
-    position: relative;
-    height: 1000px;
+    background-color: var(--primary-color);
+    padding: 6vw;
 }
 
 section .section3 .reasons h1{
-    position: relative;
-    top: 50px;
+    font-family: Segoe UI;
+    font-size: 9vw;
+    text-align: center;
     color: white;
 }
 
 section .section3 .reasons #box{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 100px 0;
+    margin: 10vh 0;
+}
+
+section .section3 .reasons #box .type1, #box .type2{
+    background-color: white;
+    margin: 4vh 0;
+    padding: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 section .section3 .reasons #box .type1{
-    border-radius: 0 60px 0 60px;
+    border-radius: 0 20vw 0 20vw;
 }
 
 section .section3 .reasons #box .type2{
-    border-radius: 60px 0 60px 0;
+    border-radius: 20vw 0 20vw 0;
+}
+
+section .section3 .reasons #box img{
+    margin: 0 auto;
+    width: 20vw;
+}
+
+section .section3 .reasons #box h3{
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 10vw;
+    padding: 5vw;
+}
+
+section .section3 .reasons #box p{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 7vw;
+}
+
+section #fundo2-end{
+    width: 100vw;
     position: relative;
-    top: 150px;
-}
-
-section .section3 .reasons #box .type1, .type2{
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    padding: 10px 34px;
-    color: var(--primary-color);
-}
-
-section .section3 .reasons #box .type1 h3, .type2 h3{
-    text-align: center;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 19pt;
-    margin: 10px 0;
-}
-
-section .section3 .reasons #box .type1 p, .type2 p{
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 14pt;
+    top: -1vh;
 }
 
 section .section4{
-    position: relative;
-    top: -120px;
+    margin: 10vh 0;
 }
 
-section .section4 .deposition{
-    display: flex;
-    width: 73%;
-    max-width: 73%;
-    margin: 0 auto;
-}
-
-section .section4 .deposition .quote, #severino{
-    display: inline;
-    font-size: 16pt;
-    font-family: Montserrat;
-    font-weight: 400;
-    margin: auto 0;
-}
-
-section .section4 .deposition .quote h3{
-    width: 50%;
-    text-align: right;
-    margin-left: auto;
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 13pt;
-}
-
-section .section5 #contact{
-    display: flex;
-    width: 73%;
-    justify-content: space-between;
-    max-width: 73%;
-    margin: 0 auto;
-    border: solid 1px var(--primary-color);
-}
-
-section .section5 #contact #contact-text{
+section .section4 .depositions{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 90vw;
+    margin: 0 auto;
 }
 
-section .section5 #contact #contact-text #ilustration-contact{
-    width: 75%; 
-    margin: 0 auto;      
+section .section4 .depositions h1{
+    font-family: Segoe UI;
+    font-size: 9vw;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+section .section4 .depositions .quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .section4 .depositions .quote #frase img, #frase p{
+    display: inline;
+}
+
+section .section4 .depositions .quote #frase img{
+    width: 10vw;
+}
+
+section .section4 .depositions .quote #frase p{
+    font-family: Montserrat;
+    font-size: 9vw;
+    font-weight: 300;
+}
+
+section .section4 .depositions .quote #severino{
+    width: 90vw;
+    margin: 3vh auto;
+}
+
+section .section4 .depositions .quote h3{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 4vw;
+    text-align: right;
+}
+
+section .section5 #contact{
+    width: 90vw;
+    margin: 0 auto;
+    border: solid 1px var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .section5 #contact #contact-text{
+    padding: 5vw;
 }
 
 section .section5 #contact #contact-text h1{
-    position: relative;
-    padding: 40px;
     font-family: Montserrat;
     font-weight: 300;
-    font-size: 30pt;
+    font-size: 9vw;
+}
+
+section .section5 #contact #contact-text img{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2vh 0;
 }
 
 section .section5 #contact form{
     background-color: var(--primary-color);
+    padding: 5vw;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
 }
 
-section .section5 #contact form fieldset{
-    padding: 5%;
+section .section5 #contact form fieldset, form button{
+    padding: 2vh 0;
+    width: 100%;
 }
 
-section .section5 #contact form input{
-    
-    width: 25vw;
-    height: 40px;
+section .section5 #contact form fieldset p{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 6.5vw;
+    color: white;
+}
+
+section .section5 #contact form fieldset input{
+    width: 100%;
+    height: 5vh;
     border-radius: 0;
     background-color: transparent;
     border-bottom: solid 1px white;
@@ -367,8 +400,7 @@ section .section5 #contact form input{
 section .section5 #contact form input[type=text], form input[type=email], form input[type=number]{
     font-family: Segoe UI;
     font-weight: 100;
-    font-size: 15pt;
-    vertical-align: middle;
+    font-size: 6vw;
     color: white;
 }
 
@@ -378,59 +410,46 @@ section .section5 #contact form input:focus{
 
 section .section5 #contact form button{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--secondary-color);
-    width: 300px;
-    height: 40px;
-    border-radius: 0;
-    padding: 5px 10px;
-    margin: 20px auto;
+    margin-top: 2vh;
 }
 
-section .section5 #contact form button:hover{
-    background-color: var(--focus-color);
-    box-shadow: 0px 0px 10px var(--focus-color);
-}
-
-section .section5 #contact form button:focus{
-    outline: 0;
-}
-
-section .section5 #contact form button h4, form button img{
-    font-family: Segoe UI;
-    font-weight: 100;
-    font-size: 15pt;
-    margin: auto 0;
-    color: white;
-}
-
-section .section5 #contact form p{
-    font-family: Segoe UI;
+section .section5 #contact form button h4{
+    font-family: Montserrat;
     font-weight: 400;
-    font-size: 15pt;
+    font-size: 4.5vw;
     color: white;
+    margin: auto 0;
 }
 
 footer{
     background-color: var(--primary-color);
-    position: relative;
     width: 100%;
-    top: 100px;
 }
 
 footer .footer{
-    width: 45%;
-    max-width: 1000px;
+    padding: 4vw;
     display: flex;
-    margin: 15px auto;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
-footer .footer h3, .footer .socialMedias img{
-    margin: auto 0;
+footer .footer h3{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 5vw;
     color: white;
-    font-family: Segoe UI;
-    font-weight: lighter;
-    font-size: 20pt;
-    padding-left: 20px;
+    text-align: center;
+}
+
+footer .footer .socialMedias{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+footer .footer .socialMedias img{
+    width: 10vw;
 }

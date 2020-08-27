@@ -1,127 +1,306 @@
-@media(max-width: 1224px){
-
-    header nav{
-        display: flex;
-        flex-direction: column;
+@media(min-width: 1024px){
+    header nav#menu-top #button-navbar{
+        display: none;
     }
 
+    header nav#menu-top ul{
+        display: flex;
+    }
+
+    header nav#menu-top .logo img#logo{
+        width: 10vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        font-family: Segoe UI;
+        font-weight: lighter;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+    }
+    
+    header nav#menu-top{
+        width: 73vw;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2vw;
+    }
+    
     header nav ul{
-        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        position: relative;
+    }
+    
+    header nav ul #mobile-menu{
+        display: flex;
+        position: relative;
+    }
+    
+    header nav ul #mobile-menu li{
+        position: relative;
+        vertical-align: middle;
+        margin: auto 0;
+        margin-left: 30px;
+    }
+    
+    header nav ul #mobile-menu #about:hover{
+        color: var(--focus-color);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    header nav ul #mobile-menu #link-contact a{
+        padding: 6px;
+        background-color: white;
+        border-radius: 0 30px 0 30px;
+        color: var(--primary-color);
+        display: none;
+        text-decoration: none;
+    }
+    header nav ul #mobile-menu #link-contact a:hover{
+        background-color: var(--focus-color);
+        color: white;
+        transition: 0.2s;
+    }
+    
+    header nav ul #call{
+        margin-left: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    header nav ul #call #number{
+        font-size: 18pt;
+        font-weight: bold;
+    }
+
+    .white-space{
+        display: block;
+        height: 14vh;
+        width: 100%;
+    }
+
+    section #fundo1{
+        width: 100%;
+    }
+
+    .section1{
+        width: 100%;
     }
 
     section .section1 .start{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    section .section1 .start .text div{
-        margin-top: 5%;
-    }
-
-    section .section1 #fundo1{
-        width: 2300px;
-    }
-
-    section .section2 .clients{
+        flex-direction: row-reverse;
         width: 73%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    section .start #ilustration-start{
+        width: 50%;
+    }
+
+    section .start .text{
+        width: 50%;
+    }
+
+    section .start .text .quote h1{
+        font-size: 3vw;
+    }
+
+    section .start .text .quote h3{
+        font-size: 1.4vw;
+    }
+
+    section .start .text .description p{
+        font-size: 1.4vw;
+    }
+
+    section .start .text .newsletter h5{
+        font-size: 1.4vw;
+    }
+
+    section .start .text .newsletter .box input{
+        width: 25vw;
+        height: 3vw;
+    }
+
+    section .start .newsletter .box input[type=text]{
+        font-size: 2vw;
+        padding: 0;
+    }
+
+    section .start .newsletter .box button{
+        width: 3vw;
+    }
+
+    .raio{
+        width: 2vw;
+    }
+
+    .button-action:hover{
+        background-color: #00F220;
+        box-shadow: 0px 0px 10px #00F220;
+    }
+
+    section .section2 .clients h1{
+        margin: 1vh auto;
+        font-size: 4vw;
     }
 
     section .section2 .clients .logos{
-        display: flex;
-        flex-direction: column;
-        
+        flex-direction: row;
     }
 
     section .section2 .clients .logos img{
-        width: 80%;
-        margin: 20px auto;
-    }
-    
-    section .section3 .reasons{
-        width: 73%;
-        height: 2200px;
+        width: 15vw;
+        padding: 2vw;
     }
 
-    section .section3 #fundo2{
-        width: 3900px;
-        transform: translateX(-50%);
-        left: 50%;
+    section .section3 .reasons h1{
+        font-size: 4vw;
     }
 
     section .section3 .reasons #box{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 60px auto;
+        flex-direction: row;
+        margin: 10vh 0;
     }
 
-    section .section3 .reasons #box .type1, .type2{
-        width: 50%;
-        margin: 20px auto;
+    section #fundo2-start{
+        width: 100%;
+        top: 3vh;
     }
 
-    section .section3 .reasons #box .type1 h3, .type2 h3{
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 25pt;
+    section .section3 .reasons #box .type1, #box .type2{
+        padding: 2vw;
+        margin: 2vh 2vw;
+        width: 25vw;
     }
 
-    section .section3 .reasons #box .type1 p, .type2 p{
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 20pt;
+    section .section3 .reasons #box .type1{
+        border-radius: 0 5vw 0 5vw;
     }
-
+    
     section .section3 .reasons #box .type2{
-        top: 0;
+        border-radius: 5vw 0 5vw 0;
+        position: relative;
+        top: 15vh;
     }
 
-    section .section5 #contact form button{
-        margin-top: 20px;
+    section .section3 .reasons #box img{
+        width: 7vw;
     }
 
-    section .section4{
-    position: relative;
-    top: 0;
+    section .section3 .reasons #box h3{
+        font-size: 1vw;
+        padding: 2vw;
+    }
+
+    section .section3 .reasons #box p{
+        font-size: 1vw;
+    }
+
+    section #fundo2-end{
+        width: 100%;
+        bottom: 3vh;
     }
 
     section .section4 .deposition{
-        display: flex;
-        flex-direction: column;
-    }
-
-    section .section4 .deposition #severino{
-        width: 75%;
         margin: 0 auto;
     }
 
-    section .section4 .deposition .quote h3{
-        width: 75%;
+    section .section4 .depositions h1{
+        font-size: 4vw;
+    }
+
+    section .section4 .depositions .quote{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70vw;
+    }
+
+    section .section4 .depositions .quote #frase{
+        margin: auto 0;
+    }
+
+    section .section4 .depositions .quote #frase img{
+        width: 2vw;
+    }
+
+    section .section4 .depositions .quote #frase p{
+        font-size: 2vw;
+    }
+
+    section .section4 .depositions .quote #severino{
+        width: 20vw;
+        margin: 0;
+    }
+
+    section .section4 .depositions .quote h3{
+        font-size: 1vw;
     }
 
     section .section5 #contact{
-        display: flex;
-        flex-direction: column;
-        width: 75vw;
-        justify-content: center;
+        flex-direction: row;
+        width: 73%;
+    }
+
+    section .section5 #contact #contact-text{
+        justify-content: space-between;
+        width: 65%;
+        padding: 2vw;
+    }
+
+    section .section5 #contact #contact-text h1{
+        font-size: 4vw;
+    }
+
+    section .section5 #contact #contact-text img{
+        width: 100%;
     }
 
     section .section5 #contact form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    section .section5 #contact form input{
-        width: 90%;
+        padding: 2vw;
+        width: 50%;
     }
 
-    section .section5 #contact form fieldset{
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
+    section .section5 #contact form fieldset p{
+        font-size: 2vw;
     }
 
-    
+    section .section5 #contact form button h4{
+        font-size: 1.6vw;
+    }
+
+    footer .footer{
+        flex-direction: row;
+        width: 80vw;
+        padding: 2vw;
+        margin: auto auto;
+    }
+
+    footer .footer h3{
+        font-size: 3vw;
+    }
+
+    footer .footer .socialMedias{
+        width: 20vw;
+    }
+
+    footer .footer .socialMedias img{
+        width: 5vw;
+    }
 }
