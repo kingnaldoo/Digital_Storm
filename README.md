@@ -15,8 +15,12 @@ Facilitar com que outras empresas levem seus negócios para a internet, servindo
 * Ícones: Flaticon
 * Fontes: Nunito, Montserrat
 
+## ✔️VISUALIZAÇÃO
+Para visualizar o projeto [clique aqui](https://reinaldodasilva.github.io/Digital_Storm/)
+
+
 ## 📝Liçenca
-Este repositório está sob a liçenca da <b>MIT LICENSE</b>.<br><br>
+Este repositório está sob a liçenca da [MIT LICENSE](https://github.com/Reinaldodasilva/Digital_Storm/blob/master/LICENSE).<br><br>
 
 <h2 align="center">
 Desenvolvido por Reinaldo da Silva☺️
