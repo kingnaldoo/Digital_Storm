@@ -16,7 +16,7 @@ Facilitar com que outras empresas levem seus negócios para a internet, servindo
 * Fontes: Nunito, Montserrat
 
 ## ✔️VISUALIZAÇÃO
-Para visualizar o projeto [clique aqui](https://reinaldodasilva.github.io/Digital_Storm/)
+Para visualizar o projeto [clique aqui](https://kingnaldoo.github.io/Digital_Storm/)
 
 
 ## 📝Liçenca
