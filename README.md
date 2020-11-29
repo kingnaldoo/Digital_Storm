@@ -1,28 +1,28 @@
 <p align="center">
 <img src="https://github.com/Reinaldodasilva/Digital_Storm/blob/master/assets/logo.svg"><br><br>
-➰ Digital Storm é um projeto desenvolvido na etapa de desafio técnico do Processo Seletivo 2020 da Container Digital Jr. <br><br>
+➰ Digital Storm is a project developed in the technical challenge stage of the Selection Process 2020 of Container Digital Jr. <br><br>
 <img src="https://github.com/Reinaldodasilva/Digital_Storm/blob/master/assets/views.jpg">
 </p>
 
-## 🚀OBJETIVOS
-Facilitar com que outras empresas levem seus negócios para a internet, servindo também como uma porta de saída caso aconteçam empecilhos que inviabilizem seus negócios físicos.
+## 🚀OBJECTIVES
+Facilitate other companies to take their business to the internet, also serving as an exit door in the event of obstacles that make their physical business unfeasible.
 
-## 💻TECNOLOGIAS
-#### Utilitários
+## 💻TECNOLOGIES
+#### Utilities
 
-* Protótipo: Adobe XD
-* Editor: Visual Studio Code
-* Ícones: Flaticon
-* Fontes: Nunito, Montserrat
+* Prototype: Adobe XD
+* IDE: Visual Studio Code
+* Icons: Flaticon
+* Fonts: Nunito, Montserrat
 
-## ✔️VISUALIZAÇÃO
-Para visualizar o projeto [clique aqui](https://kingnaldoo.github.io/Digital_Storm/)
+## ✔️PREVIEW
+[Click here](https://kingnaldoo.github.io/Digital_Storm/) to view the project
 
 
-## 📝Liçenca
-Este repositório está sob a liçenca da [MIT LICENSE](https://github.com/Reinaldodasilva/Digital_Storm/blob/master/LICENSE).<br><br>
+## 📝LICENSE
+This repository is under the license of the [MIT LICENSE](https://github.com/Reinaldodasilva/Digital_Storm/blob/master/LICENSE).<br><br>
 
 <h2 align="center">
-Desenvolvido por Reinaldo da Silva☺️
+Developed by Reinaldo da Silva☺️
 </h2>
 
